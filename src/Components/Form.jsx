@@ -6,22 +6,26 @@ export const Form = () => {
 const [text,setText]= useState('')
 
 
+const submitHandler = (event) => {
+event.preventDefault()
+if
+}
 
     return (
-        <div className="flex flex-col w-[400px] h-[400px] bg-base-200">
-            <form className=''>
-                <div class="form-control">
-                    <label class="label">
-                        <span class="label-text">ToDo List</span>
+        <div className="flex flex-col  items-center w-[600px] h-[400px] bg-base-200 rounded-xl">
+            <form onSubmit={submitHandler} className=' w-4/5 mx-auto'>
+                <div className="form-control" >
+                    <label className="label flex">
+                        <span className="label-text">ToDo List</span>
                     </label>
-                    <label class="input-group w-full">
-                        <input type="text" placeholder="Your todo..." class="input input-bordered" />
+                    <label className="input-group">
+                        <input value={text} type="text" placeholder="Your todo..." className="input input-bordered w-full" />
                         <span>Add</span>
                     </label>
                 </div>
             </form>
-            <div class="flex flex-col w-full">
-                <div class="divider"></div>
+            <div className="flex flex-col w-full">
+                <div className="divider"></div>
             </div>
             <List />
         </div>

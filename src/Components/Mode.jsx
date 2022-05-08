@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { MdOutlineLightMode } from "react-icons/md"
-import { MdOutlineNightlight } from "react-icons/md"
 
 export const Mode = () => {
 
